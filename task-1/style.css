@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@100;200;300&display=swap');
+* {
+	font-family: 'Poppins', sans-serif;
+}
+.navbar .navbar-brand {
+	font-family: 'Dancing Script', cursive;
+	font-size: 40px;
+}
+.carousel-item img {
+	width: 40rem;
+	height: 40rem;
+	object-fit: cover;
+}
+.carousel-caption {
+	margin-bottom: 13rem;
+	margin-right: 24rem;
+}
+.carousel-caption h1 {
+	font-family: 'Dancing Script', cursive;
+}
+.carousel-caption p {
+	font-size: 12px;
+}
+.wel-head {
+	font-family: 'Dancing Script', cursive;
+	font-size: 40px;
+}
+/* swiper-1 */
+
+body::before {
+	display: block;
+	content: '';
+	height: 60px;
+}
+#project::before {
+	display: block;
+	content: '';
+	height: 50px;
+}
+#pricing::before {
+	display: block;
+	content: '';
+	height: 55px;
+}
+#team::before {
+	display: block;
+	content: '';
+	height: 55px;
+}
+#blog::before {
+	display: block;
+	content: '';
+	height: 55px;
+}
+#contact::before {
+	display: block;
+	content: '';
+	height: 60px;
+}
+.swipe {
+	height: 400px;
+}
+
+.swip-sli {
+	width: 650px;
+	height: 350px;
+	border-radius: 7px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.swip-sli video {
+	width: 600px;
+	height: 350px;
+	border-radius: 10px;
+}
+/* gallery */
+.swipe-image {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.swip-imgs {
+	background-position: center;
+	background-size: cover;
+	width: 300px;
+	height: 300px;
+}
+.swip-imgs img {
+	display: block;
+	width: 320px;
+	height: 400px;
+	object-fit: cover;
+	border-radius: 7px;
+}
+#map {
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+}
