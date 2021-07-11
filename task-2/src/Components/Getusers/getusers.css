@@ -1,0 +1,59 @@
+.App {
+	background: #161623;
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+.App::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: linear-gradient(#2196f3, #e91e63);
+	clip-path: circle(50% at 10% 10%);
+}
+.App::before {
+	display: block;
+	content: '';
+	height: 70px;
+}
+.card-list ul {
+	list-style: none;
+}
+.cards {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: grid;
+	grid-gap: 1rem;
+}
+.card {
+	z-index: 1;
+
+	position: relative;
+	width: 280px;
+	height: 400px;
+	margin: 30px;
+	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+	border-radius: 15px;
+	background: rgba(255, 255, 255, 0.1);
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top: 1px solid rgba(255, 255, 255, 0.5);
+	border-left: 1px solid rgba(255, 255, 255, 0.5);
+	backdrop-filter: blur(5px);
+}
+
+@media (min-width: 600px) {
+	.cards {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (min-width: 900px) {
+	.cards {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
